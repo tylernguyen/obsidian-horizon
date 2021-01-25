@@ -1,0 +1,488 @@
+/**=================================================================================
+Inspired by Horizon VSCode Theme: https://horizontheme.netlify.app/
+tylernguyen@GitHub
+tylerspaper.com
+/**==================================================================================*/
+
+:root
+{
+    --dark0-hard:     #1C1E26;
+    --dark0:          #1A1C23;
+    --dark0-soft:     #1C1E26;
+    --dark1:          #16161C;
+    --dark2:          #2E303E;
+    --dark3:          #1C1E26;
+    --dark4:          #232530;
+
+    --gray:           #928374;
+
+    --light0-hard:    #FDF0ED;
+    --light0:         #FDF0ED;
+    --light0-soft:    #FDF0ED;
+    --light1:         #F9CEC3;
+    --light2:         #f7dcd5;
+    --light3:         #FDF0ED;
+    --light4:         #FADAD1;
+
+    --bright-red:     #B877DB;
+    --bright-green:   #8ec07c;
+    --bright-yellow:  #fcef0c;
+    --bright-blue:    #83a598;
+    --bright-purple:  #d3869b;
+    --bright-aqua:    #21BFC2;
+    --bright-orange:  #E95678;
+
+    --neutral-red:    #E95678;
+    --neutral-green:  #689d6a;
+    --neutral-yellow: #fff27d;
+    --neutral-blue:   #458588;
+    --neutral-purple: #b16286;
+    --neutral-aqua:   #1EAEAE;
+    --neutral-orange: #EE64AE;
+
+    --faded-red:      #F6661E;
+    --faded-green:    #427b58;
+    --faded-yellow:   #c8be46;
+    --faded-blue:     #076678;
+    --faded-purple:   #8f3f71;
+    --faded-aqua:     #25B2BC;
+    --faded-orange:   #E95379;
+}
+
+.theme-dark
+{
+    --font-monospace: 'Fira Code Retina';
+    --background-primary:         var(--dark0);
+    --background-primary-alt:     var(--dark0);
+    --background-secondary:       var(--dark0-hard);
+    --background-secondary-alt:   var(--dark1);
+    --text-normal:                var(--light0);
+    --text-faint:                 var(--light3);
+    --text-title-h1:              var(--neutral-red);
+    --text-title-h2:              var(--neutral-yellow);
+    --text-title-h3:              var(--neutral-green);
+    --text-title-h4:              var(--neutral-aqua);
+    --text-title-h5:              var(--neutral-purple);
+    --text-link:                  var(--bright-blue);
+    --text-a:                     var(--bright-orange);
+    --text-a-hover:               var(--bright-blue);
+    --text-mark:                  var(--neutral-yellow);
+    --pre-code:                   var(--dark1);
+    --text-highlight-bg:          var(--dark0);
+    --interactive-accent:         var(--bright-orange);
+    --interactive-before:         var(--dark4);
+    --background-modifier-border: var(--dark2);
+    --text-accent:                var(--bright-orange);
+    --interactive-accent-rgb:     var(--bright-orange);
+    --inline-code:                var(--bright-blue);
+    --code-block:                 var(--bright-blue);
+    --vim-cursor:                 var(--bright-orange);
+    --text-selection:             var(--dark4); /* light4 */
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+}
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb) !important;
+}
+.graph-view.color-text
+{
+    color: var(--text-a-hover) !important;
+}
+
+html,
+body
+{
+    font-size: 18px !important;
+    font-family: var(--font-monospace); /** Remove this to return body font back to normal */ 
+}
+
+strong
+{
+    font-weight: 600 !important;
+}
+
+a,
+.cm-hmd-internal-link
+{
+    color: var(--text-a) !important;
+    text-decoration: none !important;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-hover) !important;
+    text-decoration: none !important;
+}
+
+mark
+{
+    background-color: var(--text-mark) !important;
+    color: var(--dark0) !important;
+}
+
+.view-actions a
+{
+    color: var(--text-normal) !important;
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a) !important;
+}
+
+th
+{
+    font-weight: 600 !important;
+}
+
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--text-a) !important;
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a) !important;
+    background-color: var(--background-primary-alt) !important;
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+img
+{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.CodeMirror-code,
+.CodeMirror-linenumber,
+.cm-formatting
+{
+    font-family: var(--font-monospace) !important;
+    font-size: 0.9em;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em !important;
+    background-color: var(--pre-code) !important;
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px !important;
+    line-height: 1.4em !important;
+    display: block !important;
+    color: var(--code-block) !important;
+}
+
+.markdown-preview-section code
+{
+    color: var(--inline-code) !important;
+}
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto !important;
+}
+
+.cm-inline-code
+{
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    padding: 1px !important;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600 !important;
+}
+
+.side-dock-title
+{
+    padding-top: 15px !important;
+    font-size: 20px !important;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0 !important;
+}
+
+.cm-s-obsidian,
+.markdown-preview-view
+{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+    padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+    font-weight: 600 !important;
+}
+
+.markdown-embed
+{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.mermaid .note
+{
+    fill: var(--dark3) !important;
+}
+
+.cm-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 34px !important;
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 26px !important;
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    color: var(--text-title-h3) !important;
+}
+
+.cm-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: var(--text-title-h4) !important;
+}
+
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-section h5,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: var(--text-title-h5) !important;
+}
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.empty-state-container:hover
+{
+    background-color: var(--background-secondary-alt);
+    border: 5px solid var(--interactive-accent) !important;
+}
+
+.checkbox-container
+{
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after
+{
+    background-color: var(--background-secondary-alt);
+}
+
+.mod-cta
+{
+    color: var(--background-secondary-alt) !important;
+    font-weight: 600 !important;
+}
+
+.mod-cta:hover
+{
+    background-color: var(--interactive-before) !important;
+    font-weight: 600 !important;
+}
+
+.CodeMirror-cursor
+{
+    background-color: var(--vim-cursor) !important;
+    opacity: 60% !important;
+}
+
+input.task-list-item-checkbox {
+    border: 1px solid var(--dark4);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked
+{
+    background-color: var(--dark4);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+::selection
+{
+    background-color: var(--text-selection) !important;
+}
+
+/* Custom CSS Section */
+
+/* General Font Formatting */
+b, strong, .cm-s-obsidian .cm-strong{
+  color: var(--bright-red) !important;
+}
+i, em, span.cm-em {
+  color: var(--bright-green) !important;
+}
+u {
+  color: var(--bright-purple) !important;
+}
+
+/* Make Mathjax Font Larger */
+.MJX-TEX {
+  font-size: 180%;
+}
+
+/* Shortened Url Links -- https://forum.obsidian.md/t/hide-or-truncate-urls-in-editor-using-css/359/3 */
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
+  font-size: 0;
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
+  content: '🔗';
+  font-size: 1rem;
+}
+
+/* Graph View CSS -- https://discordapp.com/channels/686053708261228577/702656734631821413/760488978691784705 */
+.theme-dark .graph-view.color-arrow {
+  color: var(--bright-aqua);
+}
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--bright-yellow);
+}
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--neutral-blue);
+}
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--bright-red);
+}
+.graph-view.color-fill {
+  color: var(--light1);
+}
+
+/* Better Bullet Points */
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-list-ul {
+  color: transparent;
+  position: relative;
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-list-ul:after {
+  content: "•";
+  position: absolute;
+  top: -9px;
+  left: -6px;
+  color: var(--bright-yellow);
+  font-family: var(--font-monospace);
+  font-size: 25px;
+}
+
+/* Stylish Quotation -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39*/
+blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: "“";
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p { display: inline; }
+
+blockquote {
+  margin-inline-start: 0;
+}
+
+/* Bigger Link Preview -- https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/82*/
+.popover.hover-popover {
+    transform: scale(0.8); /* makes the content smaller */
+    max-height: 800px;    /* was 300 */
+    min-height: 100px;
+    width: 500px;     /* was 400 */
+}
+
+/* Collapsible Sidebar */
+.workspace-ribbon.is-collapsed:not(:hover) .workspace-ribbon-collapse-btn, 
+.workspace-ribbon.is-collapsed:not(:hover) .side-dock-actions, 
+.workspace-ribbon.is-collapsed:not(:hover) .side-dock-settings {display:none;}
+.workspace-ribbon.is-collapsed:not(:hover) {width: 0;}
+.workspace-split.mod-left-split[style="width: 0px;"] {margin-left: 0;}
+.workspace-split.mod-right-split[style="width: 0px;"] {margin-right: 0;}
+.workspace-ribbon {transition: none}
