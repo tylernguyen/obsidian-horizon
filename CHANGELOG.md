@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v0.12.10] - 2021-07-12
 ### Changed
-Font: Fira Code to Roboto Condensed.
-Attempt to organize the file into something more readable (WIP).
-Color: All headings are now yelllow.
+Font: Fira Code to Roboto Condensed.  
+Attempt to organize the file into something more readable (WIP).  
+Color: All headings are now yelllow.  
 
 ### Removed
 Deprecate some old CSS snippets.
