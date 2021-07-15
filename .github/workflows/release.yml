@@ -1,0 +1,39 @@
+name: "Compile and Release"
+on:
+  push:
+    tags:
+      - "v*"
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+
+      - name: Compile obsidian.css and publish.css
+        uses: gha-utilities/sass-build@v0.4.4
+        with:
+          source: |
+            src/obsidian.scss
+            src/publish.scss
+          destination: |
+            ./obsidian.css
+            ./publish.css
+
+      - name: Minify CSS
+        uses: nizarmah/auto-minify@master
+
+      - name: Create release
+        id: create_release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          files: |
+            obsidian.css
+            publish.css
