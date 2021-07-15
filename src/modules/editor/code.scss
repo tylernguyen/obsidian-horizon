@@ -1,0 +1,14 @@
+.cm-s-obsidian,
+.cm-inline-code {
+    -webkit-font-smoothing: auto;
+}
+
+.cm-inline-code {
+    color: var(--inline-code);
+    background-color: var(--pre-code);
+    padding: 1px;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  font-size: var(--font-size-code);
+}

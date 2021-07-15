@@ -1,0 +1,61 @@
+name: "Compile and Release"
+on:
+  push:
+    tags:
+      - "v*"
+
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+
+      - name: Compile obsidian.css and publish.css
+        uses: gha-utilities/sass-build@v0.4.4
+        with:
+          source: |
+            src/obsidian.scss
+            src/publish.scss
+          destination: |
+            ./obsidian.css
+            ./publish.css
+
+      - name: Minify obsidian.css and publish.css
+        uses: TeamTigers/minisauras@v2.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: dir
+        with:
+          directory: './' ## minify all files from root directory
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+
+      - name: Upload release obsidian.css
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./obsidian.css
+          asset_name: obsidian.css
+          asset_content_type: application/text
+
+      - name: Upload release publish.css
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./publish.css
+          asset_name: publish.css
+          asset_content_type: application/text

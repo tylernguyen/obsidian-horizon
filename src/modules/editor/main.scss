@@ -1,0 +1,33 @@
+@import "./blockquote.scss";
+@import "./code.scss";
+@import "./headings.scss";
+@import "./links.scss";
+@import "./markers.scss";
+
+@import "../../colors.scss";
+
+html,
+body {
+    font-size: var(--font-size-normal);
+    font-family: var(--default-font); 
+}
+
+strong {
+    font-weight: 500;
+}
+
+b, strong, .cm-s-obsidian .cm-strong{
+  color: $purple;
+}
+i, em, span.cm-em {
+  color: $orange;
+}
+u {
+  color: $red;
+}
+
+/* Normal Text Outside of Headings and Code */
+.cm-s-obsidian, 
+.mod-single-child .cm-s-obsidian {
+    font-size: var(--font-size-normal);
+}

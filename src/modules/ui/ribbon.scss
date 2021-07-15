@@ -1,0 +1,8 @@
+/* NOTE Ribbon is the leftmost vertical bar where plugin buttons live */
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.side-dock-collapse-btn:hover {
+    color: var(--text-accent);
+}

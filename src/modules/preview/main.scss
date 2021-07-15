@@ -1,0 +1,19 @@
+@import "./blockquotes.scss";
+@import "./checkboxes.scss";
+@import "./code.scss";
+@import "./embed.scss";
+@import "./headings.scss";
+@import "./image.scss";
+@import "./links.scss";
+@import "./lists.scss";
+@import "./mathjax.scss";
+@import "./mermaid.scss";
+@import "./popover.scss";
+@import "./tables.scss";
+@import "./tags.scss";
+
+/* Normal Text Outside of Headings and Code */
+.markdown-preview-view, 
+.mod-single-child .markdown-preview-view {
+    font-size: var(--font-size-normal);
+}

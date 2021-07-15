@@ -1,0 +1,30 @@
+.markdown-preview-view {
+  a {
+    color: var(--text-link);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--text-link);
+        text-decoration: underline
+    }
+
+    &.external-link {
+    color: var(--text-link);
+    text-decoration: none;
+      &:hover {
+        color: var(--text-link);
+        text-decoration: underline
+      }
+    }
+
+    &.internal-link {
+      color: var(--text-link);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--text-link);
+        text-decoration: underline
+      }
+    }
+  }
+}

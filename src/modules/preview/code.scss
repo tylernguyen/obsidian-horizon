@@ -1,0 +1,16 @@
+.markdown-preview-section pre code,
+.markdown-preview-section code {
+    font-size: 0.9em;
+    background-color: var(--pre-code);
+}
+
+.markdown-preview-section pre code {
+    padding: 4px;
+    line-height: 1.4em;
+    display: block;
+    color: var(--code-block);
+}
+
+.markdown-preview-section code {
+    color: var(--inline-code);
+}

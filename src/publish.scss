@@ -1,0 +1,31 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./main.scss";
+
+@import "./modules/preview/main.scss";
+
+@import "./modules/ui/document.scss";
+@import "./modules/ui/file-drawer.scss";
+@import "./modules/ui/graph.scss";
+@import "./modules/ui/search.scss";
+@import "./modules/ui/tree.scss";
+
+/* NOTE Change File Name Color */
+.markdown-preview-view .page-header {
+  color: var(--text-accent);
+}
+
+/* NOTE Hide Site Title in Favor of Site Logo */
+.site-header-text,
+.site-body-left-column-site-name {
+  display: none;
+}
+
+/* NOTE Hide Header Link Icon */
+.publish-article-heading:hover .clickable-icon {
+    display: none;
+}
+/* NOTE Hide Footer */
+.site-footer {
+    display: none;
+}

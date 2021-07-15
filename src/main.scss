@@ -1,0 +1,38 @@
+@import "./colors.scss";
+
+:root {
+    --default-font:    'Roboto Condensed';
+    --font-size-normal:              16px;
+    --font-size-code:                15px;
+    --font-size-side-dock:           15px;
+    --font-size-side-dock-title:     18px;
+    --font-size-status-bar:          12px;
+    --font-size-h1:                  25px;
+    --font-size-h2:                  21px;
+    --font-size-h3:                  18px;
+    --font-size-h4:                  16px;
+    --font-size-h5:                  14px;
+    --font-size-h6:                  12px;
+}
+
+.theme-dark {
+    --background-primary:         #{$dark3};
+    --background-primary-alt:     #{$dark2};
+    --background-secondary:       #{$dark2};
+    --background-secondary-alt:   #{$dark4};
+    --background-modifier-border: #{$dark0};
+    --text-accent:                #{$red};
+    --text-normal:                #{$light0};
+    --text-heading:               #{$yellow};
+    --text-link:                  #{$green};
+    --text-list:                  #{$yellow};
+    --text-mark:                  #{$yellow};
+    --text-selection:             #{$dark0};
+    --interactive-accent:         #{$red};
+    --interactive-before:         #{$yellow};
+    --interactive-after :         #{$red};
+    --inline-code:                #{$blue};
+    --pre-code:                   #{$dark4};
+    --code-block:                 #{$blue};
+    --vim-cursor:                 #{$orange};
+}

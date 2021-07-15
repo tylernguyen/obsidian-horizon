@@ -1,0 +1,20 @@
+/* NOTE Setting Toggles */
+.checkbox-container {
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after {
+    background-color: var(--background-secondary-alt);
+}
+
+/* NOTE Buttons */
+.mod-cta {
+    color: var(--background-secondary-alt);
+    font-weight: 600;
+}
+
+/* Highlited Button Color (Ex: Highlighted Account Buttons)*/
+.mod-cta:hover {
+    background-color: var(--interactive-before);
+    font-weight: 600;
+}

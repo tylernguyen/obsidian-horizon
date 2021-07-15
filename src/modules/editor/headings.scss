@@ -1,0 +1,34 @@
+.cm-s-obsidian {
+    .cm-header-1,
+    .cm-header-2,
+    .cm-header-3,
+    .cm-header-4,
+    .cm-header-5,
+    .cm-header-6 {
+        font-weight: 400;
+        color: var(--text-heading);
+    }
+    .cm-header-1 {
+        font-size: var(--font-size-h1);
+    }
+
+    .cm-header-2 {
+        font-size: var(--font-size-h2);
+    }
+
+    .cm-header-3 {
+        font-size: var(--font-size-h3);
+    }
+
+    .cm-header-4 {
+        font-size: var(--font-size-h4);
+    }
+
+    .cm-header-5 {
+        font-size: var(--font-size-h5);
+    }
+
+    .cm-header-6 {
+        font-size: var(--font-size-h6);
+    }
+}

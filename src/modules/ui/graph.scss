@@ -1,0 +1,47 @@
+@import "../../colors.scss";
+
+/* NOTE Node Default Color */
+.graph-view.color-circle {
+color: $light0;
+}
+
+/* NOTE Text Color */
+.graph-view.color-text {
+  color: $yellow;
+}
+
+.graph-view.color-fill {
+  color: $yellow;
+  opacity: 1;
+}
+
+/* NOTE Node .graph-view Connections Highlighted Color */
+.graph-view.color-fill-highlight {
+  color: $red;
+}
+
+.graph-view.color-line-highlight {
+  color: $red;
+}
+
+/* NOTE Color of Arrow (enable it in graph settings) */
+.theme-dark .graph-view.color-arrow {
+  color: $red;
+    opacity: 1;
+}
+
+/* NOTE Tag Node Color */
+.theme-dark .graph-view.color-fill-tag {
+  color: $green;
+}
+
+/* NOTE Attachment Node Color */
+.theme-dark .graph-view.color-fill-attachment {
+  color: $red;
+}
+
+/* NOTE Unresolved (not made but linked) Node Color */
+.theme-dark .graph-view.color-fill-unresolved {
+  color: $light0;
+  opacity: 1;
+}
