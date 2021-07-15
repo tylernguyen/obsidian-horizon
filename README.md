@@ -48,9 +48,10 @@ Tweaked some graph colors.
 
 # Spec-Sheet
 
-- ![palette](https://raw.githubusercontent.com/tylernguyen/obsidian-horizon/main/assets/palette.png|500)
 - Font: [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
-    - Only Latin + Vietnamese are loaded by default. Add/remove as neccessary. 
+- Background: Purple-Black
+- Accent: Pink-Red
+- Headings: Yellow
 - Links: Green (including internal, external links, and tags)
 
 # Live Demo (Obsidian Publish)
