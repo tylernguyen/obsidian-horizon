@@ -35,7 +35,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: latest
           prerelease: true
-          title: Lastest Horizon for Obsidian Build
+          title: Lastest
           files: |
             Horizon.css
             publish.css
