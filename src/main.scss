@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 :root {
-    --default-font:    'Roboto Condensed';
+    --default-font:    'Roboto Condensed', sans-serif;
     --font-size-normal:              16px;
     --font-size-code:                15px;
     --font-size-side-dock:           15px;

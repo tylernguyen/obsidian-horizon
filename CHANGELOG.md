@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 GitHub Actions to build on-the-fly.
 
 ### Changed
+Fixed font importing.
 Refactor project with Sass.   
 Removed color highlights on (no opened) document tab.
 Tweaked some graph colors.

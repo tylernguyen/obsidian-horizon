@@ -38,13 +38,8 @@ I welcome all manners of contributions: fixes, comments, suggestions, and critqu
 
 ## [v0.12.10] - 2021-07-15
 
-### Added
-GitHub Actions to build on-the-fly.
-
 ### Changed
-Refactor project with Sass.   
-Removed color highlights on (no opened) document tab.
-Tweaked some graph colors.
+Fixed font importing.
 
 # Spec-Sheet
 
@@ -60,8 +55,14 @@ Tweaked some graph colors.
 
 # Install
 
-1. Clone/Download `obsidian.css` and move it into `.obsidian/themes/`.
-2. Obsidian -> Appearance -> Theme -> Horizon (Base Theme -> Dark).
+1. For the best experience and performance, install [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font locally on your computer.
+2. Navgiate to the [Releases](https://github.com/tylernguyen/obsidian-horizon/releases) page.
+3. Obsidian Desktop/ Mobile:
+   1. Download `Horizon.css` and move it into `.obsidian/themes/`.
+   2. Obsidian -> `Appearance` -> `Theme` -> `Horizon` (be sure that `Base Theme` -> `Dark`).
+4. Obsidian Publish:
+   1. Download `publish.css` and move it into `./`, the root of your Obsidian vault.
+   2. Publish `publish.css` file onto your site.
 
 # Contact
 

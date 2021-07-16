@@ -22,7 +22,7 @@ jobs:
             src/obsidian.scss
             src/publish.scss
           destination: |
-            ./obsidian.css
+            ./Horizon.css
             ./publish.css
 
       - name: Minify CSS
@@ -35,7 +35,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: latest
           prerelease: true
-          title: Lastest Commit
+          title: Lastest Horizon for Obsidian Build
           files: |
-            obsidian.css
+            Horizon.css
             publish.css
