@@ -25,13 +25,8 @@ jobs:
             ./obsidian.css
             ./publish.css
 
-      - name: minisauras
-        uses: TeamTigers/minisauras@v2.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        id: dir
-        with:
-          directory: './' ## minify all files from root directory
+      - name: Minify CSS
+        uses: nizarmah/auto-minify@master
 
       - name: Create prerelease
         id: create_prerelease

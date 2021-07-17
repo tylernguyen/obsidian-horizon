@@ -13,10 +13,13 @@
    <img src="https://img.shields.io/github/last-commit/tylernguyen/obsidian-horizon"/> </a>
 <a href="https://github.com/tylernguyen/obsidian-horizon/blob/main/LICENSE">
    <img src="https://img.shields.io/badge/License-The%20Unlicense-informational.svg"> </a>
+</p>
+
+<p align="center">
 <a href="https://damnthattelevision.com/Contact">
    <img src="https://img.shields.io/badge/%40-Contact-FFF27D"> </a>
 <a href="https://damnthattelevision.com/Support">
-   <img src="https://img.shields.io/badge/%24-Support-ff69b4.svg"> </a>
+   <img src="https://img.shields.io/badge/%24-Support-E95678.svg"> </a>
 <a href="">
    <img src="https://img.shields.io/badge/Contributions-Welcome-orange.svg"> </a>
 </p>
@@ -25,6 +28,16 @@
   <a href="https://github.com/tylernguyen/obsidian-horizon/blob/main/assets/preview.png">
     <img alt="Horizon for Obsidian Preview" src="https://github.com/tylernguyen/obsidian-horizon/blob/main/assets/preview.png">
   </a>
+</p>
+
+<p align="center">
+<a href="https://fonts.google.com/specimen/Roboto+Condensed">
+   <img src="https://img.shields.io/badge/Font-Roboto%20Condensed-E95678?style=for-the-badge"> </a>
+<a href="https://damnthattelevision.com">
+   <img src="https://img.shields.io/badge/-Theme%20Demo-%237E6AD7?style=for-the-badge"> </a>
+<a href="https://damnthattelevision.com/Blog/Preview+My+Horizon+Theme+for+Obsidian">
+   <img src="https://img.shields.io/badge/-Stylesheet-FFF27D?style=for-the-badge"> </a>
+
 </p>
 
 # FAQ
@@ -50,12 +63,7 @@ You may wish to add/switch to a different font for some reasons such as:
 
 #### "Is there a light color scheme?"
 
-No currently and is not planned. The existing Horizon light palette does not suit Obsidian. An alternative light color palette can be suggested by creating a pull request/ issue.
-
-#### "Obsidian Publish live demo?"
-
-[Damn That Television](https://damnthattelevision.com) is my personal blog. It runs the latest Horizon `publish.css`.  
-You may get a better idea of how elements look by referring to [this blog post](https://damnthattelevision.com/Blog/Preview+My+Horizon+Theme+for+Obsidian).  
+No currently and is not planned. The existing Horizon light palette does not suit Obsidian. An alternative light color palette can be suggested by creating a pull request/ issue. Though the dark mode is the primary focus of this theme.  
 
 #### "Can you port this for X app?"
 
