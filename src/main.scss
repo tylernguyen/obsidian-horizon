@@ -28,11 +28,19 @@
     --text-list:                  #{$yellow};
     --text-mark:                  #{$yellow};
     --text-selection:             #{$dark0};
-    --interactive-accent:         #{$red};
+    --text-code:                  #{$orange};
+    --pre-code:                   #{$dark4};
     --interactive-before:         #{$yellow};
     --interactive-after :         #{$red};
-    --inline-code:                #{$blue};
-    --pre-code:                   #{$dark4};
-    --code-block:                 #{$blue};
-    --vim-cursor:                 #{$orange};
+    --interactive-accent:         #{$red};
+}
+
+b, strong, .cm-s-obsidian .cm-strong{
+  color: $purple;
+}
+i, em, span.cm-em {
+  color: $green;
+}
+u {
+  color: $green;
 }

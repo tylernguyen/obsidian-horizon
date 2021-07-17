@@ -1,4 +1,4 @@
-name: "Commitly Prelease"
+name: "Build Latest"
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  build_css:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,11 +22,16 @@ jobs:
             src/obsidian.scss
             src/publish.scss
           destination: |
-            ./Horizon.css
+            ./obsidian.css
             ./publish.css
 
-      - name: Minify CSS
-        uses: nizarmah/auto-minify@master
+      - name: minisauras
+        uses: TeamTigers/minisauras@v2.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: dir
+        with:
+          directory: './' ## minify all files from root directory
 
       - name: Create prerelease
         id: create_prerelease
@@ -37,5 +42,5 @@ jobs:
           prerelease: true
           title: Latest
           files: |
-            Horizon.css
+            obsidian.css
             publish.css

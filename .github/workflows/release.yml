@@ -1,4 +1,4 @@
-name: "Compile and Release"
+name: "Build Release"
 on:
   push:
     tags:
@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  build_css:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
             src/obsidian.scss
             src/publish.scss
           destination: |
-            ./Horizon.css
+            ./obsidian.css
             ./publish.css
 
       - name: Minify CSS
@@ -35,5 +35,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           files: |
-            Horizon.css
+            obsidian.css
             publish.css

@@ -1,16 +1,65 @@
-.markdown-preview-section pre code,
-.markdown-preview-section code {
-    font-size: 0.9em;
-    background-color: var(--pre-code);
-}
+@import "../../colors.scss";
 
-.markdown-preview-section pre code {
-    padding: 4px;
-    line-height: 1.4em;
-    display: block;
-    color: var(--code-block);
-}
+.markdown-preview-view {
+  :not(pre) > code {
+    color: $light0;
+    background-color: $dark2;
+    border: 1px solid $dark4;
+    font-family: var(---default-font);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+  }
 
-.markdown-preview-section code {
-    color: var(--inline-code);
+  pre {
+    padding: 16px;
+    line-height: 1.45;
+
+    border: 1px solid $dark4;
+    border-radius: 6px;
+    background-color: $dark2;
+    font-family: var(---default-font);
+
+    code {
+      background-color: unset;
+      color: var(--text-code);
+    }
+  }
+
+  .token {
+    &.keyword {
+      color: $purple;
+    }
+
+    &.class-name {
+      color: $yellow;
+    }
+
+    &.operator {
+      color: $blue;
+    }
+
+    &.number {
+      color: $orange;
+    }
+
+    &.punctuation {
+      color: $light0;
+    }
+
+    &.function {
+      color: $blue;
+    }
+
+    &.string {
+      color: $green;
+    }
+
+    &.comment {
+      color: $light0;
+    }
+
+    &.macro {
+      color: $blue;
+    }
+  }
 }
