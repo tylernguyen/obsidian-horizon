@@ -35,7 +35,7 @@
    <img src="https://img.shields.io/badge/Font-Roboto%20Condensed-E95678?style=for-the-badge"> </a>
 <a href="https://damnthattelevision.com">
    <img src="https://img.shields.io/badge/-Theme%20Demo-%237E6AD7?style=for-the-badge"> </a>
-<a href="https://damnthattelevision.com/Blog/Preview+My+Horizon+Theme+for+Obsidian">
+<a href="https://damnthattelevision.com/Blog/Preview+Horizon+Theme+for+Obsidian">
    <img src="https://img.shields.io/badge/-Stylesheet-FFF27D?style=for-the-badge"> </a>
 
 </p>

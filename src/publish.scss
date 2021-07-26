@@ -15,6 +15,14 @@
   color: var(--text-accent);
 }
 
+/* NOTE Center Site Logo */
+.site-header-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* NOTE Hide Site Title in Favor of Site Logo */
 .site-header-text,
 .site-body-left-column-site-name {
