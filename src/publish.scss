@@ -10,9 +10,11 @@
 @import "./modules/ui/search.scss";
 @import "./modules/ui/tree.scss";
 
-/* NOTE Change File Name Color */
+/* NOTE Change File Name */
 .markdown-preview-view .page-header {
   color: var(--text-accent);
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /* NOTE Center Site Logo */
