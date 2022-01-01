@@ -1,0 +1,56 @@
+@use './_colors.scss';
+
+:root {
+    --default-font:    'Roboto Condensed', sans-serif;
+    --font-size-normal:              16px;
+    --font-size-code:                15px;
+    --font-size-side-dock:           15px;
+    --font-size-side-dock-title:     18px;
+    --font-size-status-bar:          12px;
+    --font-size-h1:                  25px;
+    --font-size-h2:                  21px;
+    --font-size-h3:                  18px;
+    --font-size-h4:                  16px;
+    --font-size-h5:                  14px;
+    --font-size-h6:                  12px;
+}
+
+.theme-dark {
+    --background-primary:         #{colors.$dark3};
+    --background-primary-alt:     #{colors.$dark2};
+    --background-secondary:       #{colors.$dark2};
+    --background-secondary-alt:   #{colors.$dark4};
+    --background-modifier-border: #{colors.$dark0};
+    --text-accent:                #{colors.$red};
+    --text-normal:                #{colors.$light0};
+    --text-heading:               #{colors.$yellow};
+    --text-highlight-bg:          #{colors.$yellow};
+    --text-link:                  #{colors.$green};
+    --text-list:                  #{colors.$yellow};
+    --text-selection:             #{colors.$dark0};
+    --text-code:                  #{colors.$orange};
+    --pre-code:                   #{colors.$dark4};
+    --interactive-before:         #{colors.$yellow};
+    --interactive-after :         #{colors.$red};
+    --interactive-accent:         #{colors.$red};
+}
+
+/* NOTE Bold */
+b, strong, .cm-s-obsidian .cm-strong, .markdown-preview-section strong {
+  color: colors.$purple;
+}
+
+/* NOTE Italic */
+i, em, span.cm-em {
+  color: colors.$green;
+}
+
+/* NOTE Underline */
+u {
+  color: colors.$green;
+}
+
+/* NOTE Mark / Highlight */
+mark, .cm-s-obsidian span.cm-highlight, .markdown-preview-view mark {
+  color: colors.$dark4;
+}

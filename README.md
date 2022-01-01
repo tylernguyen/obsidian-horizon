@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="https://obsidian.md">
-   <img src= "https://img.shields.io/badge/Obsidian-0.12.10-%237E6AD7">
+   <img src= "https://img.shields.io/badge/Obsidian-0.13.17-%237E6AD7">
 <a href="https://github.com/tylernguyen/obsidian-horizon/issues">
    <img src="https://img.shields.io/github/issues/tylernguyen/obsidian-horizon"/> </a>
 <a href="https://github.com/tylernguyen/obsidian-horizon/commits/master"> 
@@ -35,10 +35,22 @@
    <img src="https://img.shields.io/badge/Font-Roboto%20Condensed-E95678?style=for-the-badge"> </a>
 <a href="https://damnthattelevision.com">
    <img src="https://img.shields.io/badge/-Theme%20Demo-%237E6AD7?style=for-the-badge"> </a>
-<a href="https://damnthattelevision.com/Blog/Preview+Horizon+Theme+for+Obsidian">
+<a href="https://damnthattelevision.com/Projects/Preview+Horizon+Theme+for+Obsidian">
    <img src="https://img.shields.io/badge/-Stylesheet-FFF27D?style=for-the-badge"> </a>
 
 </p>
+
+# Design Philosophy
+
+- Vanilla and stable
+- Lightweight, Obsidian Publish friendly
+- Minimal in snippets and tweaks 
+- High compatibility
+- Readable and easy-to-understand CSS, even for beginners
+
+Horizon then, unlike other available themes for Obsidian, **do not**:
+- Change behaviors of Obsidian
+- Support 3rd party plugins by default
 
 # FAQ
 
@@ -54,6 +66,7 @@ Currently, there is no automatic solution available. For now, I recommend you cr
 I had previous used [Fira Code](https://github.com/tonsky/FiraCode) as the theme's chosen font, mostly because I use Horizon in VSCode in conjuction with Fira Code. As I began to use Obsidian more intensely, however, these things became clear:
 - Coding ligatures were rarely used in Obsidian. 
 - I needed support for Vietnamese, which Fira Code lacked.  
+- Fira Code, while great on the destop, does not display well on compact mobile displays.
 
 [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) was then chosen for the reasons above. In addition, it's free to use.
 
@@ -72,10 +85,15 @@ No.
 # Update
 ##### Recent | [Changelog Archive](https://github.com/tylernguyen/obsidian-horizon/blob/master/CHANGELOG.md)
 
-## [v0.12.10] - 2021-07-16
+## [v0.13.18] - 2022-01-01
+### Added
+- Design Philosophy
+- More documenting comments for easier source reading.
 
 ### Changed
-Theme preview now includes an iPhone screenshot.  
+- Deprecate `@import` in favor `@use` and `@forward`
+- GitHub Workflow: upgrade gha-utilities/sass-build@0.4.0 to gha-utilities/sass-build@0.4.8
+- Color: Marked text are now black with yellow highlight.
 
 # Spec-Sheet
 

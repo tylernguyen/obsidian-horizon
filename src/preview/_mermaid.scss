@@ -1,0 +1,5 @@
+@use "../_colors.scss";
+
+.mermaid .note {
+    fill: colors.$dark1;
+}

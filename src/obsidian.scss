@@ -1,8 +1,8 @@
-@import "./fonts.scss";
-@import "./colors.scss";
-@import "./main.scss";
+@use "./_fonts.scss";
+@use "./_colors.scss";
+@use "./_main.scss";
 
 
-@import "./modules/editor/main.scss";
-@import "./modules/preview/main.scss";
-@import "./modules/ui/main.scss";
+@use 'editor';
+@use 'preview';
+@use 'ui';

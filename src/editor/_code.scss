@@ -1,0 +1,96 @@
+@use "../_colors.scss";
+
+.cm-s-obsidian {
+    span.cm-inline-code {
+      color: colors.$blue;
+      font-size: inherit;
+      // Patch for https://forum.obsidian.md/t/collapsed-code-block-in-list-causes-additional-padding-in-inline-code-elements-in-parent-block/7633
+      padding: 0;
+    }
+
+    pre.HyperMD-codeblock {
+      line-height: 1.5em;
+      font-size: var(--font-size-code);
+    }
+
+    span.cm-hmd-codeblock,
+    span.cm-hmd-indented-code,
+    span.cm-math,
+    pre.HyperMD-codeblock {
+      color: var(--text-code);
+
+      span.cm-keyword {
+        color: colors.$purple;
+      }
+
+      span.cm-def {
+        color: colors.$light0;
+      }
+
+      span.cm-variable,
+      span.cm-variable-2,
+      span.cm-variable-3 {
+        color: colors.$yellow;
+      }
+
+      span.cm-operator {
+        color: colors.$blue;
+      }
+
+      span.cm-number {
+        color: colors.$orange;
+      }
+
+      span.cm-string {
+        color: colors.$green;
+      }
+
+      span.cm-comment {
+        color: colors.$light0;
+      }
+    }
+
+    span.cm-quote {
+      font-style: italic;
+    }
+
+    .cm-hmd-frontmatter {
+      &.cm-def {
+        color: rgba(colors.$green, 0.8);
+      }
+
+      &.cm-atom {
+        color: colors.$orange;
+      }
+    }
+}
+
+.cm-s-obsidian .hmd-fold-html-stub,
+.cm-s-obsidian .hmd-fold-code-stub,
+.cm-s-obsidian.CodeMirror .HyperMD-hover > .HyperMD-hover-content code,
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian .cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .HyperMD-hr,
+.cm-s-obsidian .cm-hmd-frontmatter,
+.cm-s-obsidian .cm-hmd-orgmode-markup,
+.cm-s-obsidian .cm-formatting-code,
+.cm-s-obsidian .cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder,
+.cm-s-obsidian .CodeMirror-linewidget kbd,
+.cm-s-obsidian .hmd-fold-html kbd {
+  font-family: var(--default-font);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-left: none;
+  border-right: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: none;
+}

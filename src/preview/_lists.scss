@@ -1,0 +1,23 @@
+/* NOTE Bullet Points*/
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-list-ul {
+  color: transparent;
+  position: relative;
+}
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-list-ul:after {
+  content: "•";
+  position: absolute;
+  top: -10px;
+  left: -3px;
+  color: var(--text-list);
+  font-family: var(--default-font);
+  font-size: 22px;
+}
+
+ul li::marker {
+     color: var(--text-list);
+     font-size: 1.2em;
+ }
+
+ ul ul li::marker {
+    color: var(--text-list);
+}

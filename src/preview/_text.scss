@@ -1,0 +1,5 @@
+/* NOTE Normal Text Outside of Headings and Code */
+.markdown-preview-view, 
+.mod-single-child .markdown-preview-view {
+    font-size: var(--font-size-normal);
+}

@@ -1,0 +1,65 @@
+@use "../_colors.scss";
+
+.markdown-preview-view {
+  :not(pre) > code {
+    color: colors.$light0;
+    background-color: colors.$dark2;
+    border: 1px solid colors.$dark4;
+    font-family: var(---default-font);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+  }
+
+  pre {
+    padding: 16px;
+    line-height: 1.45;
+
+    border: 1px solid colors.$dark4;
+    border-radius: 6px;
+    background-color: colors.$dark2;
+    font-family: var(---default-font);
+
+    code {
+      background-color: unset;
+      color: var(--text-code);
+    }
+  }
+
+  .token {
+    &.keyword {
+      color: colors.$purple;
+    }
+
+    &.class-name {
+      color: colors.$yellow;
+    }
+
+    &.operator {
+      color: colors.$blue;
+    }
+
+    &.number {
+      color: colors.$orange;
+    }
+
+    &.punctuation {
+      color: colors.$light0;
+    }
+
+    &.function {
+      color: colors.$blue;
+    }
+
+    &.string {
+      color: colors.$green;
+    }
+
+    &.comment {
+      color: colors.$light0;
+    }
+
+    &.macro {
+      color: colors.$blue;
+    }
+  }
+}

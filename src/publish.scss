@@ -1,14 +1,14 @@
-@import "./fonts.scss";
-@import "./colors.scss";
-@import "./main.scss";
+@use "./_fonts.scss";
+@use "./_colors.scss";
+@use "./_main.scss";
 
-@import "./modules/preview/main.scss";
+@use 'preview';
 
-@import "./modules/ui/document.scss";
-@import "./modules/ui/file-drawer.scss";
-@import "./modules/ui/graph.scss";
-@import "./modules/ui/search.scss";
-@import "./modules/ui/tree.scss";
+@use "./ui/_document.scss";
+@use "./ui/_file-drawer.scss";
+@use "./ui/_graph.scss";
+@use "./ui/_search.scss";
+@use "./ui/_tree.scss";
 
 /* NOTE Change File Name */
 .markdown-preview-view .page-header {
